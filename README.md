@@ -61,6 +61,12 @@ ruby main.rb
 
 ### Running Tests
 
+The application includes comprehensive RSpec tests covering:
+
+- **Unit tests** for each class
+- **Integration tests** verifying all three sample inputs produce expected outputs
+- **Thread safety tests** for concurrent basket modifications
+
 ```bash
 # With Docker
 docker run sales-tax bundle exec rspec
@@ -161,17 +167,4 @@ Total: 98.38
         ├── receipt_spec.rb
         ├── rounding_spec.rb
         └── tax_calculator_spec.rb
-```
-
-## Testing
-
-The application includes comprehensive RSpec tests covering:
-
-- **Unit tests** for each class
-- **Integration tests** verifying all three sample inputs produce expected outputs
-- **Thread safety tests** for concurrent basket modifications
-
-Run the full test suite:
-```bash
-bundle exec rspec
 ```
